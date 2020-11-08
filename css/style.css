@@ -1,0 +1,25 @@
+body {
+  background: #97FE83;
+  color: #0E5100;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1.7;
+}
+
+button {
+  background: #58BA45;
+  border-radius: 10px;
+  color: inherit;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #0E5100;
+  color: #58BA45;
+  cursor: pointer;
+  transition: .5s;
+}
+/*# sourceMappingURL=style.css.map */
