@@ -53,7 +53,18 @@ function playGame (playerInput) {
 
 	printMessage(displayResult(computerMove, playerMove));
 
+	if (displayResult(computerMove, playerMove) == 'Ty wygrywasz!') {
+		playerResult = playerResult + 1;
+	} else if (displayResult(computerMove, playerMove) == 'Ja wygrywam!') {
+		computerResult = computerResult + 1;
+	}
+
+	printMessage(computerResult + ' - ' + playerResult);
+
 }
+
+let computerResult = 0;
+let playerResult = 0;
 
 document.getElementById('play-rock').addEventListener('click', function(){
 	playGame(1);
