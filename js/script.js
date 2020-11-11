@@ -39,10 +39,22 @@ function playGame (playerInput) {
 		}
 	}
 
-	let randomNumber = Math.floor(Math.random() * 3 + 1);
-	console.log('Wylosowana liczba to ' + randomNumber);
+	let fakeNumber = Math.random();
 
-	let computerMove = getMoveName(randomNumber);
+	if (fakeNumber < 0.75) {
+		if (playerInput = 1) {
+			let computerMove = getMoveName(3);
+		} else if (playerInput = 2) {
+			let computerMove = getMoveName(1);
+		} else if (playerInput = 3) {
+			let computerMove = getMoveName(2);
+		}
+	} else {
+		let randomNumber = Math.floor(Math.random() * 3 + 1);
+		console.log('Wylosowana liczba to ' + randomNumber);
+		let computerMove = getMoveName(randomNumber);
+	}
+
 	printMessage('Mój ruch to ' + computerMove + '.');
 
 	//let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
@@ -59,7 +71,7 @@ function playGame (playerInput) {
 		computerResult = computerResult + 1;
 	}
 
-	printMessage(computerResult + ' - ' + playerResult);
+	printMessage(computerResult + ' - ' + playerResult, result);
 
 }
 
