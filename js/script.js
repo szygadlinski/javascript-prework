@@ -41,21 +41,23 @@
 			}
 		}
 
-		/* const fakeNumber = Math.random();
+		const fakeNumber = Math.random();
+		let randomNumber,
+			computerMove;
 
 		if (fakeNumber < 0.75) {
-			if (playerInput = 1) {
-				const computerMove = getMoveName(3);
-			} else if (playerInput = 2) {
-				const computerMove = getMoveName(1);
-			} else if (playerInput = 3) {
-				const computerMove = getMoveName(2);
+			if (playerInput == 1) {
+				computerMove = getMoveName(3);
+			} else if (playerInput == 2) {
+				computerMove = getMoveName(1);
+			} else if (playerInput == 3) {
+				computerMove = getMoveName(2);
 			}
-		} else { */
-			const randomNumber = Math.floor(Math.random() * 3 + 1);
+		} else {
+			randomNumber = Math.floor(Math.random() * 3 + 1);
 			console.log('Wylosowana liczba to ' + randomNumber);
-			const computerMove = getMoveName(randomNumber);
-		// }
+			computerMove = getMoveName(randomNumber);
+		}
 
 		printMessage('Mój ruch to ' + computerMove + '.');
 
@@ -72,7 +74,7 @@
 			computerResult = computerResult + 1;
 		}
 
-		printMessage(computerResult + ' - ' + playerResult, /*result*/);
+		printMessage(computerResult + ' - ' + playerResult, result);
 
 	}
 
