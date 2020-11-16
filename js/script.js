@@ -42,6 +42,7 @@
 		}
 
 		const fakeNumber = Math.random();
+		console.log(fakeNumber);
 		let randomNumber,
 			computerMove;
 
@@ -74,7 +75,7 @@
 			computerResult = computerResult + 1;
 		}
 
-		printMessage(computerResult + ' - ' + playerResult, result);
+		printMessage(computerResult + ' - ' + playerResult, 'result');
 
 	}
 
